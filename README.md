@@ -9,3 +9,7 @@ The manual main-branch workflow verifies isolated local ARM64 Linux and macOS gu
 Only `.github/workflows/checks.yml` on the main branch is eligible for local execution. Public fork and pull-request checks must not receive local runner capacity. Existing organization runner restrictions remain exact.
 
 No deployment, signing, publishing, paid runner or budget increase is part of this repository.
+
+## Fork admission check
+
+This harmless fork change exercises the public pull-request admission boundary. Organization CI capacity remains restricted to the reviewed main-branch workflow.
